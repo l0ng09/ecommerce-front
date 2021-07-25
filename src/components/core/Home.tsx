@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "./Layout"
-import { useSelector } from "react-redux"
 
 const Home = () => {
-	const state = useSelector((state) => state)
-	return <Layout>Home{JSON.stringify(state)}</Layout>
+	return (
+		<Layout title="首页" subTitle="尽情享受吧">
+			Home
+		</Layout>
+	)
 }
 
 export default Home
